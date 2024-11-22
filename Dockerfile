@@ -1,14 +1,15 @@
-# Use an official Maven image to build the app
-FROM maven:3.8.6-openjdk-17-slim AS build
+FROM openjdk:17-slim AS build
 
-# Set the working directory inside the container
+# Install Maven
+RUN apt-get update && apt-get install -y maven
+
+# Copy your Maven project files into the image
+COPY . /app
+
+# Set the working directory
 WORKDIR /app
 
-# Copy the pom.xml and source code to the container
-COPY pom.xml .
-COPY src ./src
-
-# Build the application
+# Build the Maven project
 RUN mvn clean install -DskipTests
 
 # Use a lighter image for the final application
