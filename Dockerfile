@@ -26,3 +26,4 @@ EXPOSE 8000
 
 # Command to run your application
 ENTRYPOINT ["java", "-jar", "/app/Calculator-1.0-SNAPSHOT.jar"]
+
