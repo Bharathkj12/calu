@@ -19,7 +19,7 @@ FROM openjdk:17-slim
 WORKDIR /app
 
 # Copy the jar file from the build stage to the current working directory
-COPY --from=build /app/target/Calculator-1.0-SNAPSHOT.jar /app/Calculator-1.0-SNAPSHOT.jar
+COPY --from=build /app/target/Calculator-1.0-SNAPSHOT.jar /app.jar
 
 # Expose the port your app will run on (adjust if needed)
 EXPOSE 8000
