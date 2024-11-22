@@ -25,5 +25,5 @@ COPY --from=build /app/target/Calculator-1.0-SNAPSHOT.jar /app/Calculator-1.0-SN
 EXPOSE 8000
 
 # Command to run your application
-ENTRYPOINT ["java", "-jar", "/app/Calculator-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar", "/app/Calculator-1.0-SNAPSHOT.jar"]
 
