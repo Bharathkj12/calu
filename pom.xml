@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>java.com.houarizegai.calculator.App</mainClass>
+                            <mainClass>com.houarizegai.calculator.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
