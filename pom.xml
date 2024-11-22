@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>com.houari.CalculatorApp</Main-Class> <!-- Update this to your main class -->
+                            <mainClass>com.houarizegai.calculator.app</mainClass>
                         </manifestEntries>
                     </archive>
                 </configuration>
