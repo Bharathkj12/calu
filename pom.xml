@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <mainClass>com.houarizegai.calculator.app</mainClass>
+                            <mainClass>com.houarizegai.calculator.App</mainClass>
                         </manifestEntries>
                     </archive>
                 </configuration>
